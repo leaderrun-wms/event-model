@@ -16,10 +16,6 @@ build:
     - docker
 
 test:
-  services:
-    - name: foxiswho/rocketmq:4.7.0
-      alias: rocketmq
-      command: ["sh", "-c", "sh play.sh; while [ true ]; do sleep 60; done"]
   stage: test
   script:
     - mvn $MAVEN_CLI_OPTS -s settings.xml test
