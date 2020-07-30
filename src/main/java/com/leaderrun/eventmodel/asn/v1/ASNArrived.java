@@ -14,6 +14,9 @@ import lombok.Data;
 @Data
 @Builder(toBuilder = true)
 public class ASNArrived {
+
+	final public static String VERSION = "1.0";
+
 	final String asn; // ASN号码 ASN2006001234
 	final String warehouseCode; // 仓库代码 PLA
 	final String processId; // 工单号 IPLA200602467

@@ -19,6 +19,8 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CustomsDeclared {
 
+	final public static String VERSION = "1.0";
+
 	final String declarationId; // 报关单系统唯一号码 UUID
 	final String warehouseCode; // 仓库代码 PLA
 	final String refNo; // 关联号码 (ASN或出库单号) ASN2006001234

@@ -21,6 +21,9 @@ import lombok.Data;
 @Builder(toBuilder = true)
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ASNApproved {
+
+	final public static String VERSION = "1.0";
+
 	final String asn; // ASN号码 ASN2006001234
 	final String customerCode; // 客户代码 KN
 	final List<ManifestLine> manifest; // 货物清单

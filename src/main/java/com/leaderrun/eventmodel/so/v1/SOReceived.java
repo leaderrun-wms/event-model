@@ -13,6 +13,8 @@ import lombok.Data;
 @Data
 public class SOReceived {
 
+	final public static String VERSION = "1.0";
+
 	final String customerCode;
 	final String so;
 	final Date receivedAt;
