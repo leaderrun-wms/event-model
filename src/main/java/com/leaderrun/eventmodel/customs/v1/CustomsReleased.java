@@ -18,6 +18,7 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CustomsReleased {
 
+	final public static String TYPE = "customs.released";
 	final public static String VERSION = "1.0";
 
 	final String declarationId; // 报关单系统唯一号码 UUID

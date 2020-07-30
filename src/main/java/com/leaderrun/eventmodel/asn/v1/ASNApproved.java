@@ -22,6 +22,7 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ASNApproved {
 
+	final public static String TYPE = "asn.approved";
 	final public static String VERSION = "1.0";
 
 	final String asn; // ASN号码 ASN2006001234

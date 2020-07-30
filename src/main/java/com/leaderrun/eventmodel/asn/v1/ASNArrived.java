@@ -15,6 +15,7 @@ import lombok.Data;
 @Builder(toBuilder = true)
 public class ASNArrived {
 
+	final public static String TYPE = "asn.arrived";
 	final public static String VERSION = "1.0";
 
 	final String asn; // ASN号码 ASN2006001234
