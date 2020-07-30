@@ -2,8 +2,10 @@ package com.leaderrun.eventmodel.customs.v1;
 
 import java.util.Date;
 
-import com.leaderrun.eventmodel.asn.v1.Declaration;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.leaderrun.eventmodel.customs.v1.declaration.Declaration;
 
+import lombok.Builder;
 import lombok.Data;
 
 /**
@@ -13,6 +15,8 @@ import lombok.Data;
  *
  */
 @Data
+@Builder(toBuilder = true)
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class CustomsDeclared {
 
 	final String declarationId; // 报关单系统唯一号码 UUID

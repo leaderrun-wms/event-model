@@ -2,6 +2,7 @@ package com.leaderrun.eventmodel.asn.v1;
 
 import java.util.Date;
 
+import lombok.Builder;
 import lombok.Data;
 
 /**
@@ -11,6 +12,7 @@ import lombok.Data;
  *
  */
 @Data
+@Builder(toBuilder = true)
 public class ASNArrived {
 	final String asn; // ASN号码 ASN2006001234
 	final String warehouseCode; // 仓库代码 PLA

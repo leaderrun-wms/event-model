@@ -3,6 +3,12 @@ package com.leaderrun.eventmodel.asn.v1;
 import java.util.Date;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.leaderrun.eventmodel.asn.v1.manifest.ManifestLine;
+import com.leaderrun.eventmodel.asn.v1.mapping.Mappings;
+import com.leaderrun.eventmodel.customs.v1.declaration.Declaration;
+
+import lombok.Builder;
 import lombok.Data;
 
 /**
@@ -12,6 +18,8 @@ import lombok.Data;
  *
  */
 @Data
+@Builder(toBuilder = true)
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class ASNApproved {
 	final String asn; // ASN号码 ASN2006001234
 	final String customerCode; // 客户代码 KN
