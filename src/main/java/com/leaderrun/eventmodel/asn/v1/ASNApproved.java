@@ -26,7 +26,8 @@ public class ASNApproved {
 	final public static String VERSION = "1.0";
 
 	final String asn; // ASN号码 ASN2006001234
-	final String customerCode; // 客户代码 KN
+	final String customerCode; // 客户代码 KH0001
+	final String childCustomerCode; // 子客代码 KN-ACCO
 	final List<ManifestLine> manifest; // 货物清单
 	final List<Declaration> declarations; // 报关单(可以多份)
 	final Mappings mappings; // 清单和报关单关系
